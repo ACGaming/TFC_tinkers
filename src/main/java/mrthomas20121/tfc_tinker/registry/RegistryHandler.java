@@ -240,7 +240,7 @@ public class RegistryHandler {
 
     private static FluidStack getFluidStack(String fluidName, int stack)
     {
-        return FluidRegistry.getFluidStack(fluidName, Material.VALUE_Ingot*stack);
+        return FluidRegistry.getFluidStack(fluidName, ConfigMain.ConfigTFCTinker.general.ingotValue*stack);
     }
 
     private static String cap(String str)

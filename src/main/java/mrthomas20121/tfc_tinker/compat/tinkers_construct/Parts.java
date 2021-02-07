@@ -1,5 +1,6 @@
 package mrthomas20121.tfc_tinker.compat.tinkers_construct;
 
+import mrthomas20121.tfc_tinker.ConfigMain;
 import mrthomas20121.tfc_tinker.compat.tinkers_construct.tool.ToolProspectorPick;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -23,7 +24,7 @@ public class Parts {
 
     public static void registerItems(RegistryEvent.Register<Item> event) {
         IForgeRegistry<Item> r = event.getRegistry();
-        proPickHead = new ToolPart(Material.VALUE_Ingot);
+        proPickHead = new ToolPart(ConfigMain.ConfigTFCTinker.general.ingotValue);
         proPickHead.setRegistryName(TFC_Tinker.MODID,"propick_head");
         proPickHead.setTranslationKey(TFC_Tinker.MODID + ".propick_head");
         TFC_Tinker.proxy.registerToolPartModel(proPickHead);

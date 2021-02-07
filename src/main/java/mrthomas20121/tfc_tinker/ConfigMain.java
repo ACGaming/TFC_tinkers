@@ -32,6 +32,10 @@ public final class ConfigMain {
     }
 
     public static class ConfigGeneral {
+        @Config.LangKey("config.general.ingot_value")
+        @Config.Comment("How much the different items are \"worth\", this value is used for both liquid conversion as well as part crafting")
+        public int ingotValue = 100;
+
         @Config.LangKey("config.general.alloys")
         @Config.Comment("Set to false to disable Smeltery alloys added by TFC Tinker.")
         public boolean register_alloys = true;
